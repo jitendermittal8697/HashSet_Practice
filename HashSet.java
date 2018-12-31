@@ -4,7 +4,6 @@ class HashSet_Practice
 {
     public static void main(String...strings) {
         
-
         // normally adding elements
         HashSet<Integer> obj1 = new HashSet<>();
         System.out.println("obj1 Is Empty ? " + obj1.isEmpty()); //isEmpty()
