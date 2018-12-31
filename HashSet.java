@@ -108,7 +108,7 @@ class HashSet_Practice
         iter.forEachRemaining(value -> System.out.print(value +" "));
 
         System.out.println("\nIterate over a HashSet using simple for-each loop");
-        for(int value : obj2)
+        for(Integer value : obj2)
         {
             System.out.print(value + " ");
         }
