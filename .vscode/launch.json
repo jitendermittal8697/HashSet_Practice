@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HashSet_Practice",
+            "request": "launch",
+            "mainClass": "HashSet_Practice"
+        }
+    ]
+}
