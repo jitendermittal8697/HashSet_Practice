@@ -46,7 +46,7 @@ class HashSet_Practice
         arr2.add(18);
         System.out.println("The elements of a Array List arr2 are : " + arr2);
         // Adding elements from different collection objects
-        HashSet<Integer> obj2 = new HashSet<>(arr1);  
+        Set<Integer> obj2 = new HashSet<>(arr1);  
         obj2.addAll(arr2); 
 
         System.out.println("The elements of Linked Lists arr1 and arr2 when added to HashSet obj2 are : "+obj2);
@@ -92,6 +92,25 @@ class HashSet_Practice
         //time to iterate over elements in obj2
         System.out.println("obj2 has elements : " + obj2);
 
-        
+        System.out.println("Iterate over a HashSet using Java 8 forEach and lambda expression.");
+        obj2.forEach(value -> System.out.print(value + " "));
+
+        System.out.println("\nIterate over a HashSet using iterator()");
+        Iterator<Integer> iter = obj2.iterator();
+
+        while(iter.hasNext())
+        {
+            System.out.print(iter.next() + " ");
+        }
+
+        System.out.println("\nIterate over a HashSet using iterator() and Java 8 forEachRemaining() method");
+        iter = obj2.iterator();
+        iter.forEachRemaining(value -> System.out.print(value +" "));
+
+        System.out.println("\nIterate over a HashSet using simple for-each loop");
+        for(int value : obj2)
+        {
+            System.out.print(value + " ");
+        }
     }
 }
